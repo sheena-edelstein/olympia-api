@@ -4,7 +4,7 @@ from typing import Any
 from flask import Request, jsonify
 
 # Configure a API key do Gemini (deve estar definida como variável de ambiente no painel da Vercel)
-genai.configure(api_key=os.getenv("GEMINI_API_KEY", "GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY", "GOOGLE_API_KEY"))
 
 # Carrega o modelo Gemini
 model = genai.GenerativeModel("gemini-pro")
